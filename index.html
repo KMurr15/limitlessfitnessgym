@@ -23,11 +23,18 @@
       <h1>Transform Your Life at Limitless Fitness</h1>
       <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
       <a href="#">Join Now</a>
+
       <!-- add alt text where necessary -->
       <!-- add responsive images for resolution switching -->
-      
-        src="images/facility.jpg"
-
+      <img
+        srcset="images/facility-320w.jpg 320w,
+                images/facility-768w.jpg 768w,
+                images/facility.jpg 1920w"
+        sizes="(max-width: 767px) 320px,
+                (max-width: 1919px) 768px,
+                1920px"
+        src="images/facility.jpg" alt="black and white image of a gym with equipment and windows for natural light"
+      >
     </header>
 
     <nav>
