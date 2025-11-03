@@ -99,17 +99,31 @@
         <section id="membership-form">
           <h3>Join Limitless Fitness Today!</h3>
           <p>Fill out the form below to kickstart your fitness journey:</p>
+
           <!--add accessibility to the form-->
-          Full Name
-          Email Address
-          Phone Number
-          Membership Type
-            Select a Membership Option
-            Monthly Membership
-            Annual Membership
-            Family & Group Plans
-          Tell us about your fitness goals:
-          Submit
+          <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+            <label for="user-full-name">Full Name<span class="required">*</span></label>
+            <input type="text" name="user-full-name" id="user-full-name" autocomplete="on" required>
+
+            <label for="user-email">Email Address<span class="required">*</span></label>
+            <input type="email" name="user-email" id="user-email" autocomplete="on" required>
+
+            <label for="user-phone">Phone Number<span class="required">*</span></label>
+            <input type="tel" name="user-phone" id="user-phone" autocomplete="on" required>
+            
+            <label for="membership-type">Membership Type<span class="required">*</span></label>
+            <select id="membership-type" name="membership-type" required>
+              <option value="">Select a Membership Option</option>
+              <option value="monthly-membership">Monthly Membership</option>
+              <option value="annual-membership">Annual Membership</option>
+              <option value="family-group-plans">Family & Group Plans</option>
+            </select>
+
+            <label for="user-fitness-goals">Tell us about your fitness goals:<span class="required">*</span></label>
+            <textarea name="user-fitness-goals" id="user-fitness-goals" placeholder="e.g. Run a 10k!"></textarea>        
+
+            <input type="submit" name="user-submit" id="user-submit">
+          </form>
         </section>
       </section>
     </main>
